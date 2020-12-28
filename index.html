@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Notion Clone | Apoorv Kansal</title>
+    <link rel="stylesheet" href="index.css" />
     <script src="//cdn.quilljs.com/1.3.6/quill.js"></script>
 
     <!-- Theme included stylesheets -->
@@ -13,20 +14,11 @@
   </head>
   <body style="margin: 0">
     <h2>This is the notion demo</h2>
-    <div
-      style="
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 50;
-        display: none;
-        flex-direction: column;
-      "
-      id="text"
-    >
-      <div>Heading</div>
-      <div>Bold</div>
-      <div>Code</div>
+    <div id="menubar">
+      <div class="menu-child" id="blockquote">Blockquote</div>
+      <div class="menu-child" id="header">Header</div>
+      <div class="menu-child" id="list">List</div>
+      <div class="menu-child" id="code">Code</div>
     </div>
     <div id="quillEditor" style="height: 200px; position: relative"></div>
   </body>
